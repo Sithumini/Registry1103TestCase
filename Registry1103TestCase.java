@@ -123,9 +123,9 @@ public class Registry1103TestCase {
 
         assertTrue(artifact.getQName().toString().contains("endpoint1"), "artifact name not found");
         assertTrue(artifact.getAttribute("overview_address").contains("https://www.google.com"),
-                "artifact overview_address not found");
+                "artifact address not found");
         assertTrue(artifact.getAttribute("overview_version").contains("1.0.0"),
-                "overview_address found");
+                "version not found");
 
         // Read the logs
         String readCarbonLogs = readCarbonLogs();
